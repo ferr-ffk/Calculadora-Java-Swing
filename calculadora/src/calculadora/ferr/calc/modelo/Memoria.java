@@ -31,8 +31,7 @@ public class Memoria {
 
 	private final List<MemoriaObservador> observadores = new ArrayList<>();
 
-	private Memoria() {
-	}
+	private Memoria() {}
 
 	public static Memoria get() {
 		return m;
