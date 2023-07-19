@@ -64,6 +64,7 @@ public class Memoria {
 			textoAtual = "0";
 		} else if (tipo == TipoComando.NUMERO || tipo == TipoComando.VIRGULA) {
 			textoAtual = substituir ? texto : textoAtual + texto;
+			substituir = false;
 		} else {
 			substituir = true;
 			textoAtual = obterResultadoOperacao();
